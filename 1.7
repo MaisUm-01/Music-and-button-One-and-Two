@@ -1,0 +1,26 @@
+import requests
+import webbrowser
+from tkinter import *
+
+janela = Tk()
+janela.title('Musica is Life')
+# ──────────────────────────────────────────────────────────── #
+texo = Label(janela, text='Click no botão para ouvir musica')
+texo.grid(column=0, row=0)
+texto2 = Label(janela, text='Embaixo')
+texto2.grid(column=0, row=1)
+# ──────────────────────────────────────────────────────────── #
+def p():
+    webbrowser.open('https://youtu.be/XdLvMpUJipY')
+
+botao = Button(janela, text='Botão 1', command=p)
+botao.grid(column=0, row=2, padx=10, pady=10)
+# ──────────────────────────────────────────────────────────── #
+def o():
+    webbrowser.open('https://youtu.be/-tJYN-eG1zk')
+
+botao = Button(janela, text='Botão 2', command=o)
+botao.grid(column=0, row=3, padx=11, pady=11)
+# ──────────────────────────────────────────────────────────── #
+janela.mainloop()
+# ──────────────────────────────────────────────────────────── #
